@@ -36,4 +36,8 @@ Sitemap: https://yoursite.vercel.app/sitemap.xml
 # Note: This PDF merger runs entirely in the browser
 # Your files NEVER leave your device - no uploads, no servers
 # Privacy-first, client-side only processing
+#
+# This project is OPEN SOURCE - don't just take our word for it!
+# Verify our code yourself: https://github.com/caldavidlee/mergemultiplepdfs
+# See for yourself that no data is ever transmitted to any server.
 
