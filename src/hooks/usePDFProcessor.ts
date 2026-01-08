@@ -75,7 +75,9 @@ export function usePDFProcessor() {
         data: arrayBuffer,
       }
     } catch (error) {
-      console.error('Error loading PDF:', error)
+      if (import.meta.env.DEV) {
+        console.error('Error loading PDF:', error)
+      }
       return null
     } finally {
       setIsProcessing(false)
@@ -95,7 +97,9 @@ export function usePDFProcessor() {
       const mergedPdfBytes = await mergePDFDocuments(pdfData)
       return new Blob([mergedPdfBytes], { type: 'application/pdf' })
     } catch (error) {
-      console.error('Error merging PDFs:', error)
+      if (import.meta.env.DEV) {
+        console.error('Error merging PDFs:', error)
+      }
       return null
     } finally {
       setIsProcessing(false)
