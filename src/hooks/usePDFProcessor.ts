@@ -42,6 +42,7 @@ export function usePDFProcessor() {
     await page.render({
       canvasContext: context,
       viewport,
+      canvas,
     }).promise
 
     return {

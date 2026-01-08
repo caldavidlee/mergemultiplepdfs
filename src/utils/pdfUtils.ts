@@ -5,7 +5,7 @@ interface PDFData {
   selectedPages: number[]
 }
 
-export async function mergePDFDocuments(pdfDataList: PDFData[]): Promise<Uint8Array> {
+export async function mergePDFDocuments(pdfDataList: PDFData[]): Promise<ArrayBuffer> {
   const mergedPdf = await PDFDocument.create()
 
   for (const { data, selectedPages } of pdfDataList) {
@@ -19,6 +19,7 @@ export async function mergePDFDocuments(pdfDataList: PDFData[]): Promise<Uint8Ar
     }
   }
 
-  return mergedPdf.save()
+  const pdfBytes = await mergedPdf.save()
+  return pdfBytes.buffer as ArrayBuffer
 }
 
