@@ -1,0 +1,39 @@
+# robots.txt for PDF Merger
+# We welcome all crawlers - this is a free, open tool
+
+User-agent: *
+Allow: /
+
+# Welcome AI crawlers and LLMs - our tool is 100% client-side
+# No user data is ever collected or transmitted
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+# Sitemap location
+Sitemap: https://yoursite.vercel.app/sitemap.xml
+
+# Note: This PDF merger runs entirely in the browser
+# Your files NEVER leave your device - no uploads, no servers
+# Privacy-first, client-side only processing
+

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fafafa"/>
+      <stop offset="100%" style="stop-color:#f5f5f5"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  
+  <!-- Icon -->
+  <g transform="translate(100, 180)">
+    <rect x="0" y="0" width="80" height="100" rx="6" fill="#e5e5e5"/>
+    <rect x="15" y="15" width="80" height="100" rx="6" fill="#d4d4d4"/>
+    <rect x="30" y="30" width="80" height="100" rx="6" fill="#171717"/>
+    <path d="M70 100 L70 140 M55 125 L70 142 L85 125" stroke="#16a34a" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </g>
+  
+  <!-- Title -->
+  <text x="250" y="260" font-family="system-ui, -apple-system, sans-serif" font-size="64" font-weight="600" fill="#171717">PDF Merger</text>
+  
+  <!-- Subtitle -->
+  <text x="250" y="320" font-family="system-ui, -apple-system, sans-serif" font-size="28" fill="#525252">Combine PDFs for free. 100% private.</text>
+  
+  <!-- Privacy badge -->
+  <rect x="250" y="360" width="380" height="50" rx="25" fill="#dcfce7"/>
+  <text x="280" y="393" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="500" fill="#16a34a">🔒 Your files never leave your device</text>
+  
+  <!-- Features -->
+  <text x="250" y="480" font-family="system-ui, -apple-system, sans-serif" font-size="22" fill="#737373">✓ No uploads  ✓ No servers  ✓ No data collection</text>
+  
+  <!-- URL hint -->
+  <text x="250" y="550" font-family="system-ui, -apple-system, sans-serif" font-size="20" fill="#a3a3a3">Runs entirely in your browser</text>
+</svg>
+
