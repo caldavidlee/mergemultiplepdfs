@@ -24,8 +24,15 @@ export interface PDFDocument {
   data: ArrayBuffer
 }
 
+export interface LoadingProgress {
+  currentPage: number
+  totalPages: number
+  fileName: string
+}
+
 export function usePDFProcessor() {
   const [isProcessing, setIsProcessing] = useState(false)
+  const [progress, setProgress] = useState<LoadingProgress | null>(null)
 
   const generateThumbnail = async (
     page: pdfjs.PDFPageProxy,
@@ -59,8 +66,14 @@ export function usePDFProcessor() {
       const arrayBuffer = await file.arrayBuffer()
       const pdf = await pdfjs.getDocument({ data: arrayBuffer.slice(0) }).promise
       
+      // Set initial progress
+      setProgress({ currentPage: 0, totalPages: pdf.numPages, fileName: file.name })
+      
       const thumbnails: PageThumbnail[] = []
       for (let i = 0; i < pdf.numPages; i++) {
+        // Update progress for each page
+        setProgress({ currentPage: i + 1, totalPages: pdf.numPages, fileName: file.name })
+        
         const page = await pdf.getPage(i + 1)
         const thumbnail = await generateThumbnail(page, i)
         thumbnails.push(thumbnail)
@@ -81,6 +94,7 @@ export function usePDFProcessor() {
       return null
     } finally {
       setIsProcessing(false)
+      setProgress(null)
     }
   }, [])
 
@@ -110,6 +124,7 @@ export function usePDFProcessor() {
     loadPDF,
     mergePDFs,
     isProcessing,
+    progress,
   }
 }
 

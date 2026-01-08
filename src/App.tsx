@@ -5,18 +5,31 @@ import { DropZone } from './components/DropZone'
 import { PDFItem } from './components/PDFItem'
 import { MergeButton } from './components/MergeButton'
 import { PrivacyNotice } from './components/PrivacyNotice'
+import { Toast } from './components/Toast'
 import { usePDFProcessor, PDFDocument } from './hooks/usePDFProcessor'
 import styles from './App.module.css'
 
 function App() {
   const [documents, setDocuments] = useState<PDFDocument[]>([])
-  const { loadPDF, mergePDFs, isProcessing } = usePDFProcessor()
+  const [error, setError] = useState<string | null>(null)
+  const { loadPDF, mergePDFs, isProcessing, progress } = usePDFProcessor()
 
   const handleFilesSelected = useCallback(async (files: File[]) => {
-    const newDocs = await Promise.all(
-      files.map(file => loadPDF(file))
+    const results = await Promise.all(
+      files.map(async (file) => ({ file, doc: await loadPDF(file) }))
     )
-    setDocuments(prev => [...prev, ...newDocs.filter(Boolean) as PDFDocument[]])
+    
+    const successDocs = results.filter(r => r.doc !== null).map(r => r.doc as PDFDocument)
+    const failedFiles = results.filter(r => r.doc === null).map(r => r.file.name)
+    
+    if (failedFiles.length > 0) {
+      const fileList = failedFiles.length === 1 
+        ? failedFiles[0] 
+        : `${failedFiles.length} files`
+      setError(`Failed to load ${fileList}. Make sure they are valid PDF files.`)
+    }
+    
+    setDocuments(prev => [...prev, ...successDocs])
   }, [loadPDF])
 
   const handleDragEnd = useCallback((event: DragEndEvent) => {
@@ -82,6 +95,8 @@ function App() {
       URL.revokeObjectURL(url)
       // Securely clear all buffers after successful download
       secureCleanup()
+    } else {
+      setError('Failed to merge PDFs. Please try again.')
     }
   }, [documents, mergePDFs, secureCleanup])
 
@@ -102,6 +117,20 @@ function App() {
 
       <main className={styles.main}>
         <DropZone onFilesSelected={handleFilesSelected} disabled={isProcessing} />
+
+        {progress && (
+          <div className={styles.progressContainer}>
+            <div className={styles.progressText}>
+              Loading {progress.fileName}: page {progress.currentPage} of {progress.totalPages}
+            </div>
+            <div className={styles.progressBar}>
+              <div 
+                className={styles.progressFill} 
+                style={{ width: `${(progress.currentPage / progress.totalPages) * 100}%` }}
+              />
+            </div>
+          </div>
+        )}
 
         {documents.length > 0 && (
           <>
@@ -157,6 +186,14 @@ function App() {
           <span>Open source — verify our code</span>
         </a>
       </footer>
+
+      {error && (
+        <Toast 
+          message={error} 
+          type="error" 
+          onClose={() => setError(null)} 
+        />
+      )}
     </div>
   )
 }
