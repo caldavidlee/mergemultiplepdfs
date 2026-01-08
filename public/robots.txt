@@ -31,7 +31,7 @@ User-agent: Bytespider
 Allow: /
 
 # Sitemap location
-Sitemap: https://yoursite.vercel.app/sitemap.xml
+Sitemap: https://mergemultiplepdfs.com/sitemap.xml
 
 # Note: This PDF merger runs entirely in the browser
 # Your files NEVER leave your device - no uploads, no servers

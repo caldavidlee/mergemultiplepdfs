@@ -19,11 +19,11 @@ Before deploying, complete these security steps:
 - [ ] Enable 2FA on your GitHub account
 - [ ] Enable 2FA on your Vercel account
 - [ ] Enable 2FA on your Cloudflare account
-- [ ] Replace all `yoursite.vercel.app` placeholders with your actual domain
+- [ ] Replace all `mergemultiplepdfs.com` placeholders with your actual domain
 
 ### Files to Update
 
-Search and replace `yoursite.vercel.app` in:
+Search and replace `mergemultiplepdfs.com` in:
 - `index.html` (canonical URL, Open Graph tags, JSON-LD)
 - `public/robots.txt` (sitemap URL)
 - `public/sitemap.xml` (loc URL)

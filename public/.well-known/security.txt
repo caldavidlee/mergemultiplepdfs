@@ -3,22 +3,22 @@
 
 # Contact information for security researchers
 # Replace with your actual email address
-Contact: mailto:security@yoursite.com
+Contact: mailto:divarnold@berkeley.edu
 
 # Preferred languages for communication
 Preferred-Languages: en
 
 # Canonical URL for this security.txt
-Canonical: https://yoursite.vercel.app/.well-known/security.txt
+Canonical: https://mergemultiplepdfs.com/.well-known/security.txt
 
 # Our security policy page (if you have one)
-# Policy: https://yoursite.vercel.app/security-policy
+# Policy: https://mergemultiplepdfs.com/security-policy
 
 # Expiration date - update annually
 Expires: 2027-01-08T00:00:00.000Z
 
 # Acknowledgements page for security researchers (optional)
-# Acknowledgments: https://yoursite.vercel.app/thanks
+# Acknowledgments: https://mergemultiplepdfs.com/thanks
 
 # Note: This PDF merger processes all files locally in your browser.
 # No user data is ever transmitted to any server.
