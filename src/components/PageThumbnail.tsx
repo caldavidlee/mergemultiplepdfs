@@ -1,3 +1,4 @@
+import { memo } from 'react'
 import { PageThumbnail as PageThumbnailType } from '../hooks/usePDFProcessor'
 import styles from './PageThumbnail.module.css'
 
@@ -7,7 +8,7 @@ interface PageThumbnailProps {
   onToggle: () => void
 }
 
-export function PageThumbnail({ thumbnail, isSelected, onToggle }: PageThumbnailProps) {
+export const PageThumbnail = memo(function PageThumbnail({ thumbnail, isSelected, onToggle }: PageThumbnailProps) {
   return (
     <button
       className={`${styles.thumbnail} ${isSelected ? styles.selected : ''}`}
@@ -30,5 +31,5 @@ export function PageThumbnail({ thumbnail, isSelected, onToggle }: PageThumbnail
       </div>
     </button>
   )
-}
+})
 

@@ -1,3 +1,4 @@
+import { memo, useMemo } from 'react'
 import { useSortable } from '@dnd-kit/sortable'
 import { CSS } from '@dnd-kit/utilities'
 import { PDFDocument } from '../hooks/usePDFProcessor'
@@ -11,7 +12,7 @@ interface PDFItemProps {
   onRemove: (docId: string) => void
 }
 
-export function PDFItem({ document, onPageToggle, onSelectAll, onRemove }: PDFItemProps) {
+export const PDFItem = memo(function PDFItem({ document, onPageToggle, onSelectAll, onRemove }: PDFItemProps) {
   const {
     attributes,
     listeners,
@@ -28,6 +29,9 @@ export function PDFItem({ document, onPageToggle, onSelectAll, onRemove }: PDFIt
 
   const allSelected = document.selectedPages.length === document.pageCount
   const noneSelected = document.selectedPages.length === 0
+  
+  // O(1) lookup instead of O(n) for large documents
+  const selectedSet = useMemo(() => new Set(document.selectedPages), [document.selectedPages])
 
   return (
     <div
@@ -78,12 +82,12 @@ export function PDFItem({ document, onPageToggle, onSelectAll, onRemove }: PDFIt
           <PageThumbnail
             key={idx}
             thumbnail={thumb}
-            isSelected={document.selectedPages.includes(thumb.pageIndex)}
+            isSelected={selectedSet.has(thumb.pageIndex)}
             onToggle={() => onPageToggle(document.id, thumb.pageIndex)}
           />
         ))}
       </div>
     </div>
   )
-}
+})
 
