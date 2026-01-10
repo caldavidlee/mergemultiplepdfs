@@ -1,5 +1,5 @@
 // Service Worker for PDF Merger - Offline Support
-const CACHE_NAME = 'pdf-merger-v1'
+const CACHE_NAME = 'pdf-merger-v2'
 
 // Assets to cache on install
 const STATIC_ASSETS = [
@@ -59,7 +59,7 @@ self.addEventListener('fetch', (event) => {
           })
           return response
         })
-        .catch(() => caches.match('/index.html'))
+        .catch(() => caches.match('/index.html').then((r) => r || fetch(request)))
     )
     return
   }
@@ -90,9 +90,13 @@ self.addEventListener('fetch', (event) => {
     return
   }
 
-  // For everything else, try network first
+  // For everything else, network first with proper fallback
   event.respondWith(
-    fetch(request).catch(() => caches.match(request))
+    fetch(request)
+      .then((response) => response)
+      .catch(() =>
+        caches.match(request).then((r) => r || new Response('Offline', { status: 503 }))
+      )
   )
 })
 

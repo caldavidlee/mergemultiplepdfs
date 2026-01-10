@@ -9,19 +9,15 @@ createRoot(document.getElementById('root')!).render(
   </StrictMode>,
 )
 
-// Register service worker for offline support
-if ('serviceWorker' in navigator) {
+// Register service worker for offline support (production only)
+if ('serviceWorker' in navigator && import.meta.env.PROD) {
   window.addEventListener('load', () => {
     navigator.serviceWorker.register('/sw.js').then(
       (registration) => {
-        if (import.meta.env.DEV) {
-          console.log('SW registered:', registration.scope)
-        }
+        console.log('SW registered:', registration.scope)
       },
       (error) => {
-        if (import.meta.env.DEV) {
-          console.log('SW registration failed:', error)
-        }
+        console.log('SW registration failed:', error)
       }
     )
   })
