@@ -13,14 +13,14 @@
         "@dnd-kit/utilities": "^3.2.2",
         "@fontsource/dm-sans": "^5.2.8",
         "pdf-lib": "^1.17.1",
-        "pdfjs-dist": "^5.4.624",
+        "pdfjs-dist": "^5.5.207",
         "react": "^19.2.4",
         "react-dom": "^19.2.4"
       },
       "devDependencies": {
-        "@types/react": "^19.2.10",
+        "@types/react": "^19.2.14",
         "@types/react-dom": "^19.2.3",
-        "@vitejs/plugin-react": "^5.1.3",
+        "@vitejs/plugin-react": "^5.1.4",
         "sharp": "^0.34.5",
         "typescript": "~5.9.3",
         "vite": "^7.2.4"
@@ -1364,9 +1364,9 @@
       }
     },
     "node_modules/@napi-rs/canvas": {
-      "version": "0.1.88",
-      "resolved": "https://registry.npmjs.org/@napi-rs/canvas/-/canvas-0.1.88.tgz",
-      "integrity": "sha512-/p08f93LEbsL5mDZFQ3DBxcPv/I4QG9EDYRRq1WNlCOXVfAHBTHMSVMwxlqG/AtnSfUr9+vgfN7MKiyDo0+Weg==",
+      "version": "0.1.95",
+      "resolved": "https://registry.npmjs.org/@napi-rs/canvas/-/canvas-0.1.95.tgz",
+      "integrity": "sha512-lkg23ge+rgyhgUwXmlbkPEhuhHq/hUi/gXKH+4I7vO+lJrbNfEYcQdJLIGjKyXLQzgFiiyDAwh5vAe/tITAE+w==",
       "license": "MIT",
       "optional": true,
       "workspaces": [
@@ -1380,23 +1380,23 @@
         "url": "https://github.com/sponsors/Brooooooklyn"
       },
       "optionalDependencies": {
-        "@napi-rs/canvas-android-arm64": "0.1.88",
-        "@napi-rs/canvas-darwin-arm64": "0.1.88",
-        "@napi-rs/canvas-darwin-x64": "0.1.88",
-        "@napi-rs/canvas-linux-arm-gnueabihf": "0.1.88",
-        "@napi-rs/canvas-linux-arm64-gnu": "0.1.88",
-        "@napi-rs/canvas-linux-arm64-musl": "0.1.88",
-        "@napi-rs/canvas-linux-riscv64-gnu": "0.1.88",
-        "@napi-rs/canvas-linux-x64-gnu": "0.1.88",
-        "@napi-rs/canvas-linux-x64-musl": "0.1.88",
-        "@napi-rs/canvas-win32-arm64-msvc": "0.1.88",
-        "@napi-rs/canvas-win32-x64-msvc": "0.1.88"
+        "@napi-rs/canvas-android-arm64": "0.1.95",
+        "@napi-rs/canvas-darwin-arm64": "0.1.95",
+        "@napi-rs/canvas-darwin-x64": "0.1.95",
+        "@napi-rs/canvas-linux-arm-gnueabihf": "0.1.95",
+        "@napi-rs/canvas-linux-arm64-gnu": "0.1.95",
+        "@napi-rs/canvas-linux-arm64-musl": "0.1.95",
+        "@napi-rs/canvas-linux-riscv64-gnu": "0.1.95",
+        "@napi-rs/canvas-linux-x64-gnu": "0.1.95",
+        "@napi-rs/canvas-linux-x64-musl": "0.1.95",
+        "@napi-rs/canvas-win32-arm64-msvc": "0.1.95",
+        "@napi-rs/canvas-win32-x64-msvc": "0.1.95"
       }
     },
     "node_modules/@napi-rs/canvas-android-arm64": {
-      "version": "0.1.88",
-      "resolved": "https://registry.npmjs.org/@napi-rs/canvas-android-arm64/-/canvas-android-arm64-0.1.88.tgz",
-      "integrity": "sha512-KEaClPnZuVxJ8smUWjV1wWFkByBO/D+vy4lN+Dm5DFH514oqwukxKGeck9xcKJhaWJGjfruGmYGiwRe//+/zQQ==",
+      "version": "0.1.95",
+      "resolved": "https://registry.npmjs.org/@napi-rs/canvas-android-arm64/-/canvas-android-arm64-0.1.95.tgz",
+      "integrity": "sha512-SqTh0wsYbetckMXEvHqmR7HKRJujVf1sYv1xdlhkifg6TlCSysz1opa49LlS3+xWuazcQcfRfmhA07HxxxGsAA==",
       "cpu": [
         "arm64"
       ],
@@ -1414,9 +1414,9 @@
       }
     },
     "node_modules/@napi-rs/canvas-darwin-arm64": {
-      "version": "0.1.88",
-      "resolved": "https://registry.npmjs.org/@napi-rs/canvas-darwin-arm64/-/canvas-darwin-arm64-0.1.88.tgz",
-      "integrity": "sha512-Xgywz0dDxOKSgx3eZnK85WgGMmGrQEW7ZLA/E7raZdlEE+xXCozobgqz2ZvYigpB6DJFYkqnwHjqCOTSDGlFdg==",
+      "version": "0.1.95",
+      "resolved": "https://registry.npmjs.org/@napi-rs/canvas-darwin-arm64/-/canvas-darwin-arm64-0.1.95.tgz",
+      "integrity": "sha512-F7jT0Syu+B9DGBUBcMk3qCRIxAWiDXmvEjamwbYfbZl7asI1pmXZUnCOoIu49Wt0RNooToYfRDxU9omD6t5Xuw==",
       "cpu": [
         "arm64"
       ],
@@ -1434,9 +1434,9 @@
       }
     },
     "node_modules/@napi-rs/canvas-darwin-x64": {
-      "version": "0.1.88",
-      "resolved": "https://registry.npmjs.org/@napi-rs/canvas-darwin-x64/-/canvas-darwin-x64-0.1.88.tgz",
-      "integrity": "sha512-Yz4wSCIQOUgNucgk+8NFtQxQxZV5NO8VKRl9ePKE6XoNyNVC8JDqtvhh3b3TPqKK8W5p2EQpAr1rjjm0mfBxdg==",
+      "version": "0.1.95",
+      "resolved": "https://registry.npmjs.org/@napi-rs/canvas-darwin-x64/-/canvas-darwin-x64-0.1.95.tgz",
+      "integrity": "sha512-54eb2Ho15RDjYGXO/harjRznBrAvu+j5nQ85Z4Qd6Qg3slR8/Ja+Yvvy9G4yo7rdX6NR9GPkZeSTf2UcKXwaXw==",
       "cpu": [
         "x64"
       ],
@@ -1454,9 +1454,9 @@
       }
     },
     "node_modules/@napi-rs/canvas-linux-arm-gnueabihf": {
-      "version": "0.1.88",
-      "resolved": "https://registry.npmjs.org/@napi-rs/canvas-linux-arm-gnueabihf/-/canvas-linux-arm-gnueabihf-0.1.88.tgz",
-      "integrity": "sha512-9gQM2SlTo76hYhxHi2XxWTAqpTOb+JtxMPEIr+H5nAhHhyEtNmTSDRtz93SP7mGd2G3Ojf2oF5tP9OdgtgXyKg==",
+      "version": "0.1.95",
+      "resolved": "https://registry.npmjs.org/@napi-rs/canvas-linux-arm-gnueabihf/-/canvas-linux-arm-gnueabihf-0.1.95.tgz",
+      "integrity": "sha512-hYaLCSLx5bmbnclzQc3ado3PgZ66blJWzjXp0wJmdwpr/kH+Mwhj6vuytJIomgksyJoCdIqIa4N6aiqBGJtJ5Q==",
       "cpu": [
         "arm"
       ],
@@ -1474,9 +1474,9 @@
       }
     },
     "node_modules/@napi-rs/canvas-linux-arm64-gnu": {
-      "version": "0.1.88",
-      "resolved": "https://registry.npmjs.org/@napi-rs/canvas-linux-arm64-gnu/-/canvas-linux-arm64-gnu-0.1.88.tgz",
-      "integrity": "sha512-7qgaOBMXuVRk9Fzztzr3BchQKXDxGbY+nwsovD3I/Sx81e+sX0ReEDYHTItNb0Je4NHbAl7D0MKyd4SvUc04sg==",
+      "version": "0.1.95",
+      "resolved": "https://registry.npmjs.org/@napi-rs/canvas-linux-arm64-gnu/-/canvas-linux-arm64-gnu-0.1.95.tgz",
+      "integrity": "sha512-J7VipONahKsmScPZsipHVQBqpbZx4favaD8/enWzzlGcjiwycOoymL7f4tNeqdjK0su19bDOUt6mjp9gsPWYlw==",
       "cpu": [
         "arm64"
       ],
@@ -1494,9 +1494,9 @@
       }
     },
     "node_modules/@napi-rs/canvas-linux-arm64-musl": {
-      "version": "0.1.88",
-      "resolved": "https://registry.npmjs.org/@napi-rs/canvas-linux-arm64-musl/-/canvas-linux-arm64-musl-0.1.88.tgz",
-      "integrity": "sha512-kYyNrUsHLkoGHBc77u4Unh067GrfiCUMbGHC2+OTxbeWfZkPt2o32UOQkhnSswKd9Fko/wSqqGkY956bIUzruA==",
+      "version": "0.1.95",
+      "resolved": "https://registry.npmjs.org/@napi-rs/canvas-linux-arm64-musl/-/canvas-linux-arm64-musl-0.1.95.tgz",
+      "integrity": "sha512-PXy0UT1J/8MPG8UAkWp6Fd51ZtIZINFzIjGH909JjQrtCuJf3X6nanHYdz1A+Wq9o4aoPAw1YEUpFS1lelsVlg==",
       "cpu": [
         "arm64"
       ],
@@ -1514,9 +1514,9 @@
       }
     },
     "node_modules/@napi-rs/canvas-linux-riscv64-gnu": {
-      "version": "0.1.88",
-      "resolved": "https://registry.npmjs.org/@napi-rs/canvas-linux-riscv64-gnu/-/canvas-linux-riscv64-gnu-0.1.88.tgz",
-      "integrity": "sha512-HVuH7QgzB0yavYdNZDRyAsn/ejoXB0hn8twwFnOqUbCCdkV+REna7RXjSR7+PdfW0qMQ2YYWsLvVBT5iL/mGpw==",
+      "version": "0.1.95",
+      "resolved": "https://registry.npmjs.org/@napi-rs/canvas-linux-riscv64-gnu/-/canvas-linux-riscv64-gnu-0.1.95.tgz",
+      "integrity": "sha512-2IzCkW2RHRdcgF9W5/plHvYFpc6uikyjMb5SxjqmNxfyDFz9/HB89yhi8YQo0SNqrGRI7yBVDec7Pt+uMyRWsg==",
       "cpu": [
         "riscv64"
       ],
@@ -1534,9 +1534,9 @@
       }
     },
     "node_modules/@napi-rs/canvas-linux-x64-gnu": {
-      "version": "0.1.88",
-      "resolved": "https://registry.npmjs.org/@napi-rs/canvas-linux-x64-gnu/-/canvas-linux-x64-gnu-0.1.88.tgz",
-      "integrity": "sha512-hvcvKIcPEQrvvJtJnwD35B3qk6umFJ8dFIr8bSymfrSMem0EQsfn1ztys8ETIFndTwdNWJKWluvxztA41ivsEw==",
+      "version": "0.1.95",
+      "resolved": "https://registry.npmjs.org/@napi-rs/canvas-linux-x64-gnu/-/canvas-linux-x64-gnu-0.1.95.tgz",
+      "integrity": "sha512-OV/ol/OtcUr4qDhQg8G7SdViZX8XyQeKpPsVv/j3+7U178FGoU4M+yIocdVo1ih/A8GQ63+LjF4jDoEjaVU8Pw==",
       "cpu": [
         "x64"
       ],
@@ -1554,9 +1554,9 @@
       }
     },
     "node_modules/@napi-rs/canvas-linux-x64-musl": {
-      "version": "0.1.88",
-      "resolved": "https://registry.npmjs.org/@napi-rs/canvas-linux-x64-musl/-/canvas-linux-x64-musl-0.1.88.tgz",
-      "integrity": "sha512-eSMpGYY2xnZSQ6UxYJ6plDboxq4KeJ4zT5HaVkUnbObNN6DlbJe0Mclh3wifAmquXfrlgTZt6zhHsUgz++AK6g==",
+      "version": "0.1.95",
+      "resolved": "https://registry.npmjs.org/@napi-rs/canvas-linux-x64-musl/-/canvas-linux-x64-musl-0.1.95.tgz",
+      "integrity": "sha512-Z5KzqBK/XzPz5+SFHKz7yKqClEQ8pOiEDdgk5SlphBLVNb8JFIJkxhtJKSvnJyHh2rjVgiFmvtJzMF0gNwwKyQ==",
       "cpu": [
         "x64"
       ],
@@ -1574,9 +1574,9 @@
       }
     },
     "node_modules/@napi-rs/canvas-win32-arm64-msvc": {
-      "version": "0.1.88",
-      "resolved": "https://registry.npmjs.org/@napi-rs/canvas-win32-arm64-msvc/-/canvas-win32-arm64-msvc-0.1.88.tgz",
-      "integrity": "sha512-qcIFfEgHrchyYqRrxsCeTQgpJZ/GqHiqPcU/Fvw/ARVlQeDX1VyFH+X+0gCR2tca6UJrq96vnW+5o7buCq+erA==",
+      "version": "0.1.95",
+      "resolved": "https://registry.npmjs.org/@napi-rs/canvas-win32-arm64-msvc/-/canvas-win32-arm64-msvc-0.1.95.tgz",
+      "integrity": "sha512-aj0YbRpe8qVJ4OzMsK7NfNQePgcf9zkGFzNZ9mSuaxXzhpLHmlF2GivNdCdNOg8WzA/NxV6IU4c5XkXadUMLeA==",
       "cpu": [
         "arm64"
       ],
@@ -1594,9 +1594,9 @@
       }
     },
     "node_modules/@napi-rs/canvas-win32-x64-msvc": {
-      "version": "0.1.88",
-      "resolved": "https://registry.npmjs.org/@napi-rs/canvas-win32-x64-msvc/-/canvas-win32-x64-msvc-0.1.88.tgz",
-      "integrity": "sha512-ROVqbfS4QyZxYkqmaIBBpbz/BQvAR+05FXM5PAtTYVc0uyY8Y4BHJSMdGAaMf6TdIVRsQsiq+FG/dH9XhvWCFQ==",
+      "version": "0.1.95",
+      "resolved": "https://registry.npmjs.org/@napi-rs/canvas-win32-x64-msvc/-/canvas-win32-x64-msvc-0.1.95.tgz",
+      "integrity": "sha512-GA8leTTCfdjuHi8reICTIxU0081PhXvl3lzIniLUjeLACx9GubUiyzkwFb+oyeKLS5IAGZFLKnzAf4wm2epRlA==",
       "cpu": [
         "x64"
       ],
@@ -1632,9 +1632,9 @@
       }
     },
     "node_modules/@rolldown/pluginutils": {
-      "version": "1.0.0-rc.2",
-      "resolved": "https://registry.npmjs.org/@rolldown/pluginutils/-/pluginutils-1.0.0-rc.2.tgz",
-      "integrity": "sha512-izyXV/v+cHiRfozX62W9htOAvwMo4/bXKDrQ+vom1L1qRuexPock/7VZDAhnpHCLNejd3NJ6hiab+tO0D44Rgw==",
+      "version": "1.0.0-rc.3",
+      "resolved": "https://registry.npmjs.org/@rolldown/pluginutils/-/pluginutils-1.0.0-rc.3.tgz",
+      "integrity": "sha512-eybk3TjzzzV97Dlj5c+XrBFW57eTNhzod66y9HrBlzJ6NsCrWCp/2kaPS3K9wJmurBC0Tdw4yPjXKZqlznim3Q==",
       "dev": true,
       "license": "MIT"
     },
@@ -2041,9 +2041,9 @@
       "license": "MIT"
     },
     "node_modules/@types/react": {
-      "version": "19.2.10",
-      "resolved": "https://registry.npmjs.org/@types/react/-/react-19.2.10.tgz",
-      "integrity": "sha512-WPigyYuGhgZ/cTPRXB2EwUw+XvsRA3GqHlsP4qteqrnnjDrApbS7MxcGr/hke5iUoeB7E/gQtrs9I37zAJ0Vjw==",
+      "version": "19.2.14",
+      "resolved": "https://registry.npmjs.org/@types/react/-/react-19.2.14.tgz",
+      "integrity": "sha512-ilcTH/UniCkMdtexkoCN0bI7pMcJDvmQFPvuPvmEaYA/NSfFTAgdUSLAoVjaRJm7+6PvcM+q1zYOwS4wTYMF9w==",
       "dev": true,
       "license": "MIT",
       "dependencies": {
@@ -2061,16 +2061,16 @@
       }
     },
     "node_modules/@vitejs/plugin-react": {
-      "version": "5.1.3",
-      "resolved": "https://registry.npmjs.org/@vitejs/plugin-react/-/plugin-react-5.1.3.tgz",
-      "integrity": "sha512-NVUnA6gQCl8jfoYqKqQU5Clv0aPw14KkZYCsX6T9Lfu9slI0LOU10OTwFHS/WmptsMMpshNd/1tuWsHQ2Uk+cg==",
+      "version": "5.1.4",
+      "resolved": "https://registry.npmjs.org/@vitejs/plugin-react/-/plugin-react-5.1.4.tgz",
+      "integrity": "sha512-VIcFLdRi/VYRU8OL/puL7QXMYafHmqOnwTZY50U1JPlCNj30PxCMx65c494b1K9be9hX83KVt0+gTEwTWLqToA==",
       "dev": true,
       "license": "MIT",
       "dependencies": {
         "@babel/core": "^7.29.0",
         "@babel/plugin-transform-react-jsx-self": "^7.27.1",
         "@babel/plugin-transform-react-jsx-source": "^7.27.1",
-        "@rolldown/pluginutils": "1.0.0-rc.2",
+        "@rolldown/pluginutils": "1.0.0-rc.3",
         "@types/babel__core": "^7.20.5",
         "react-refresh": "^0.18.0"
       },
@@ -2398,15 +2398,15 @@
       "license": "0BSD"
     },
     "node_modules/pdfjs-dist": {
-      "version": "5.4.624",
-      "resolved": "https://registry.npmjs.org/pdfjs-dist/-/pdfjs-dist-5.4.624.tgz",
-      "integrity": "sha512-sm6TxKTtWv1Oh6n3C6J6a8odejb5uO4A4zo/2dgkHuC0iu8ZMAXOezEODkVaoVp8nX1Xzr+0WxFJJmUr45hQzg==",
+      "version": "5.5.207",
+      "resolved": "https://registry.npmjs.org/pdfjs-dist/-/pdfjs-dist-5.5.207.tgz",
+      "integrity": "sha512-WMqqw06w1vUt9ZfT0gOFhMf3wHsWhaCrxGrckGs5Cci6ybDW87IvPaOd2pnBwT6BJuP/CzXDZxjFgmSULLdsdw==",
       "license": "Apache-2.0",
       "engines": {
-        "node": ">=20.16.0 || >=22.3.0"
+        "node": ">=20.19.0 || >=22.13.0 || >=24"
       },
       "optionalDependencies": {
-        "@napi-rs/canvas": "^0.1.88",
+        "@napi-rs/canvas": "^0.1.95",
         "node-readable-to-web-readable-stream": "^0.4.2"
       }
     },
